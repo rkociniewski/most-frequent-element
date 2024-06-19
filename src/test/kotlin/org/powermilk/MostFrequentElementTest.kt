@@ -10,7 +10,7 @@ import kotlin.test.assertEquals
 class MostFrequentElementTest {
     @ParameterizedTest
     @MethodSource("mostFrequentElement")
-    fun `should returns most popular elements (for more than one elements)`(array: IntArray, expected: List<String>) =
+    fun `should returns most popular elements`(array: IntArray, expected: List<String>) =
         assertEquals(expected, array.getMostFrequentElement())
 
     private fun mostFrequentElement() = listOf(
