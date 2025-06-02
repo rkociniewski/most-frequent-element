@@ -1,64 +1,73 @@
-# MostFrequentElement
+# Most Frequent Element
 
-[![version](https://img.shields.io/badge/version-1.0.1-yellow.svg)](https://semver.org)
+[![version](https://img.shields.io/badge/version-1.0.2-yellow.svg)](https://semver.org)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
+[![Build](https://github.com/rkociniewski/most-frequent-element/actions/workflows/main.yml/badge.svg)](https://github.com/rkociniewski/most-frequent-element/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/rkociniewski/most-frequent-element/branch/main/graph/badge.svg)](https://codecov.io/gh/rkociniewski/most-frequent-element)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.1.21-blueviolet?logo=kotlin)](https://kotlinlang.org/)
+[![Gradle](https://img.shields.io/badge/Gradle-8.14.1-blue?logo=gradle)](https://gradle.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-greem.svg)](https://opensource.org/licenses/MIT)
 
-Application for calculating most frequent elements in array and presents it in string list. String have form `NxM`
-where:
-- N is most frequent element value
-- M is a number of occurrences of this element
 
-## Getting started
+This Kotlin project provides a utility extension function for the `IntArray` type to find and display the most frequent elements in the array in the format:
+```
 
-First, you need to ensure you have these applications:
+value x count
 
-- [GIT](https://git-scm.com/) — GIT isn't necessary, but is better to have installed
-- IDE (I prefer [IntelliJ IDEA](https://www.jetbrains.com/idea/)) — It isn't necessary, but in IDE you can look up code
-  quicker and nicer.
-- [Gradle](https://gradle.org/) - necessary to build a project, sometimes IDE have it pre-installed.
-- [Java JDK](https://www.oracle.com/java/technologies/downloads/#java11) - This one is mandatory ;)
+````
 
-You can download a project in two ways:
+---
 
-- By GIT, typing in console this command:
+## 🔧 Usage
 
- ```
-git clone git@gitlab.com:powermilk-default/most-frequent-element.git
- ```
+### Function
+```kotlin
+fun IntArray.getMostFrequentElement(): List<String>
+````
 
-If you decide to use this one, I assume you know the basics of GIT
+### Example
 
-- By download ZIP file. You need to just
-  download [this file](https://gitlab.com/powermilk-default/most-frequent-element/-/archive/master/most-frequent-element.zip)
-  .
+```kotlin
+val array = intArrayOf(1, 2, 5, 5, 5, 6, 6, 6, 7, 7)
+println(array.getMostFrequentElement()) // Output: [5x3, 6x3]
+```
 
-## Prerequisites
+---
 
-You can build this project with [Gradle](https://gradle.org/), so dependencies are automatically downloaded and
-imported, but for your information I listed what technologies are used in this repository:
+## ✅ Test Coverage
 
-Code:
+The function is covered by parameterized tests written using JUnit 5.
 
-- [Java JDK](https://www.java.com/pl/download/) - If you want to develop this application, you will
-  need [JDK](https://www.oracle.com/java/technologies/downloads/#java11).
-  Java is a programming language what I used to write this program.
+### Example test cases include:
 
-Testing
+* Multiple most frequent values
+* A single most frequent value
+* All elements unique
+* All elements identical
+* Empty array
+* Arrays with negative and zero values
 
-- [JUnit 5](https://junit.org/junit5) - The testing Framework.
-
-## Running application
-
-This application just presents a solution to some issue, and it can be run itself. It doesn't have `main()` method.
-
-## Running the tests
-
-I use Gradle, so you can run test with this command:
+Tests are located in:
 
 ```
-gradle test
+src/test/kotlin/rk/powermilk/MostFrequentElementTest.kt
 ```
+
+---
+
+## 📦 Project Structure
+
+```
+rk.powermilk
+├── getMostFrequentElement.kt        // Main function
+└── MostFrequentElementTest.kt      // Parameterized tests
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License.
 
 ## Built With
 
@@ -70,4 +79,4 @@ We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **Rafał Kociniewski** - [PowerMilk](https://gitlab.com/rafal.kociniewski)
+* **Rafał Kociniewski** - [PowerMilk](https://github.com/rkociniewski)
