@@ -11,11 +11,12 @@ group = "rk.powermilk"
 /**
  * project version
  */
-version = "1.0.6"
+version = "1.0.7"
 
-val javaVersion = JavaVersion.VERSION_21
+val javaVersion: JavaVersion = JavaVersion.VERSION_21
 val jvmTargetVersion = JvmTarget.JVM_21.target
 
+@Suppress("UnstableApiUsage")
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.test.logger)
