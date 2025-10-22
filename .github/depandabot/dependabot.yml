@@ -56,7 +56,7 @@ updates:
     ignore:
       # Ignore major version updates for stable dependencies
       - dependency-name: "com.android.tools.build:gradle"
-        update-types: ["version-update:semver-major"]
+        update-types: [ "version-update:semver-major" ]
       # Ignore specific versions with known issues
       # - dependency-name: "androidx.compose.ui:ui"
       #   versions: ["1.5.0"]

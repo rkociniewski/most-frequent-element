@@ -1,6 +1,6 @@
 # Most Frequent Element
 
-[![version](https://img.shields.io/badge/version-1.0.8-yellow.svg)](https://semver.org)
+[![version](https://img.shields.io/badge/version-1.0.9-yellow.svg)](https://semver.org)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 [![Build](https://github.com/rkociniewski/most-frequent-element/actions/workflows/main.yml/badge.svg)](https://github.com/rkociniewski/most-frequent-element/actions/workflows/main.yml)
 [![codecov](https://codecov.io/gh/rkociniewski/most-frequent-element/branch/main/graph/badge.svg)](https://codecov.io/gh/rkociniewski/most-frequent-element)
@@ -8,7 +8,9 @@
 [![Gradle](https://img.shields.io/badge/Gradle-9.10-blue?logo=gradle)](https://gradle.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-greem.svg)](https://opensource.org/licenses/MIT)
 
-This Kotlin project provides a utility extension function for the `IntArray` type to find and display the most frequent elements in the array in the format:
+This Kotlin project provides a utility extension function for the `IntArray` type to find and display the most frequent
+elements in the array in the format:
+
 ```
 
 value x count
@@ -20,6 +22,7 @@ value x count
 ## 🔧 Usage
 
 ### Function
+
 ```kotlin
 fun IntArray.getMostFrequentElement(): List<String>
 ````
