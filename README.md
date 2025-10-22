@@ -1,6 +1,6 @@
 # Most Frequent Element
 
-[![version](https://img.shields.io/badge/version-1.0.9-yellow.svg)](https://semver.org)
+[![version](https://img.shields.io/badge/version-1.0.10-yellow.svg)](https://semver.org)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 [![Build](https://github.com/rkociniewski/most-frequent-element/actions/workflows/main.yml/badge.svg)](https://github.com/rkociniewski/most-frequent-element/actions/workflows/main.yml)
 [![codecov](https://codecov.io/gh/rkociniewski/most-frequent-element/branch/main/graph/badge.svg)](https://codecov.io/gh/rkociniewski/most-frequent-element)
